@@ -1,0 +1,21 @@
+:root{
+    --main-bg-color:hsl(0, 0%, 8%);
+    --second-bg-color:hsl(0, 0%, 12%);
+    --button-bg-color:hsl(0, 0%, 20%);
+    --button-hover-bg-color:hsl(75, 94%, 57%);
+    --button-hover-color:hsl(0, 0%, 20%);
+    --main-color:hsl(0, 0%, 100%);
+    --second-color:hsl(75, 94%, 57%);
+    --small-font-size: 0.875rem;
+    --border-radius: 0.60rem;
+    --margin-bottom: 0.75rem;
+    --font-small: 0.875rem;
+    --font-bold: bold;
+}
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
