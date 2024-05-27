@@ -5,9 +5,12 @@
     --h1-color: hsl(24, 5%, 18%);
     --bg-color-2:hsl(330, 100%, 98%);
     --bg-color: hsl(0, 0%, 100%);
-    --border-radius: 20px;
+    --border-radius: 24px;
     --border-radius-2: 12px;
-   --padding: 1rem;
+    --padding: 2.5rem;
+    --title-color-2:hsl(332, 51%, 32%);
+    --margin-bottom: 32px;
+    --margin-top: 32px;
 }
 *,
 *:before,
@@ -15,4 +18,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    background-color: var(--main-bg-color);
+}
+main{
+    background-color: var(--bg-color);
+    width:50%;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+}
+.container{
+    padding:var(--padding);
+}
+.container img{
+    width: 100%;
+    border-radius: var(--border-radius-2);
+    margin-bottom: 40px;
+}
+.title h1{
+    color: var(--h1-color);
+    margin-bottom: 24px;
+}
+.title{
+    margin-bottom: var(--margin-bottom);
+}
+.prep{
+    background-color: var(--bg-color-2);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-2);
+    margin-bottom: var(--margin-bottom);
+}
+.prep h4{
+    color: var(--title-color-2);
+}
+.prep li{
+    color: var(--text-color);
+}
+.ingredients{
+    margin-bottom: var(--margin-bottom);
+}
+.instructions{
+    margin-bottom: var(--margin-bottom);
+    margin-top: var(--margin-top);
+}
+.nutritions{
+    margin-top: var(--margin-top);
+}
+h2{
+    color: var(--title-color);
 }
