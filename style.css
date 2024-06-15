@@ -11,6 +11,9 @@
     --title-color-2:hsl(332, 51%, 32%);
     --margin-bottom: 32px;
     --margin-top: 32px;
+    --font-title:'young-serif';
+    --font-base:'Outfit';
+    --margin: 2rem;
 }
 *,
 *:before,
@@ -19,6 +22,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+    font-weight: 0 1000;
+    font-display: swap;
+  }
+ @font-face {
+    font-family: 'young-serif';
+    src:url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+ } 
 body{
     background-color: var(--main-bg-color);
 }
@@ -30,6 +43,7 @@ main{
 }
 .container{
     padding:var(--padding);
+    font-family: var(--font-base);
 }
 .container img{
     width: 100%;
@@ -39,6 +53,7 @@ main{
 .title h1{
     color: var(--h1-color);
     margin-bottom: 24px;
+    font-family: var(--font-title);
 }
 .title{
     margin-bottom: var(--margin-bottom);
@@ -57,6 +72,7 @@ main{
 }
 .ingredients{
     margin-bottom: var(--margin-bottom);
+    font-family: var(--font-base);
 }
 .instructions{
     margin-bottom: var(--margin-bottom);
@@ -67,4 +83,9 @@ main{
 }
 h2{
     color: var(--title-color);
+    font-family: var(--font-title);
+
+}
+ul, ol{
+    padding-left: 1rem;
 }
